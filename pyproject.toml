@@ -11,11 +11,17 @@ python = "^3.10"
 [tool.poetry.scripts]
 link = "link.entrypoint:main"
 
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.2.6"
+sphinx-markdown-builder = "^0.6.6"
+
 [tool.poetry.group.dev]
 optional = true
 
 [tool.poetry.group.dev.dependencies]
-sphinx = "^7.2.6"
 ruff = "^0.3.0"
 
 [build-system]
